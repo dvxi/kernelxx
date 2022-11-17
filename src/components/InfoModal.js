@@ -8,17 +8,23 @@ const InfoModal = (props) => {
             size="lg"
             aria-labelledby="contained-modal-title-vcenter"
             centered
-            className="text-black"
+            className="text-white text-center"
             >
-            <Modal.Body>
-                <h4>{props.info.name}</h4>
-                <p>
-                {props.info.text}
+            <Modal.Body className="p-4 rounded" style={{ backgroundColor: '#313131' }}>
+                <h4>Dowiedz się więcej</h4>
+                <p className="mb-4">
+                Jezeli chcesz wiedzieć więcej, odwiedź stronę wydarzenia.<br />
+                Tam znajdziesz informacje dotyczące wykładowców.
                 </p>
+                <div className="d-grip gap-2">
+                    <Button variant="primary" size="lg">
+                        Strona wydarzenia
+                    </Button>{' '}
+                    <Button variant="outline-primary" size="lg">
+                        Strona Kernel
+                    </Button>
+                </div>
             </Modal.Body>
-            <Modal.Footer>
-                <Button variant="dark" onClick={props.onHide}>Close</Button>
-            </Modal.Footer>
         </Modal>
     );
 }

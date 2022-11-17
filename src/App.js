@@ -29,6 +29,24 @@ function App() {
         onHide={() => setModalShow(false)}
         info={modalInfo}
       />
+      <img 
+      src="./kernel.svg"
+      style={{
+        position: 'absolute',
+        top: 0,
+        right: '-10%',
+        zIndex: -1
+      }}
+      className="opacity-25"/>
+      <div style={{
+        position: 'absolute',
+        top: 0,
+        right: 0,
+        borderRadius: '50%',
+        background: "radial-gradient('#e66465', '#9198e5')",
+        width: '80vw',
+        height: '80vw'
+      }}></div>
     </div>
   );
 }

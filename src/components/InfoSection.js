@@ -1,33 +1,29 @@
 import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
-import { IoSchool } from 'react-icons/io5';
+import { Container, Row, Col, Card, Image } from 'react-bootstrap';
+import { IoSchoolOutline, IoLaptopOutline, IoConstructOutline } from 'react-icons/io5';
 
 const InfoSection = () => {
 
     const cards = [
         {
-            icon: <IoSchool className="me-3" />,
-            title: '10h+',
-            text: 'wykładów'
+            icon: <IoSchoolOutline className="me-3" />,
+            title: '10',
+            text: 'róznych wykładów'
         },
         {
-            icon: <IoSchool className="me-3" />,
-            title: '10h+',
-            text: 'wykładów'
+            icon: <IoConstructOutline className="me-3" />,
+            title: '2',
+            text: 'warsztaty do wyboru'
         },
         {
-            icon: <IoSchool className="me-3" />,
-            title: '10h+',
-            text: 'wykładów'
-        },
-        {
-            icon: <IoSchool className="me-3" />,
-            title: '10h+',
-            text: 'wykładów'
-        },
+            icon: <IoLaptopOutline className="me-3" />,
+            title: '9',
+            text: 'firm z branzy IT'
+        }
     ]
 
     return (
+        <div>
         <Container className="py-5" id="info">
             <Row className="text-center">
                 <Col xs={9} lg={6} className="mx-auto">
@@ -38,7 +34,7 @@ const InfoSection = () => {
                     </p>
                 </Col>
             </Row>
-            <Row className="mt-5">
+            <Row className="mt-5 justify-content-center">
             {
                 cards.map((card) => (
                     <Col xs={6} lg={3} className="my-3">
@@ -57,7 +53,30 @@ const InfoSection = () => {
                 ))
             }
             </Row>
+            <Row className="text-center my-5">
+                <Col xs={9} lg={6} className="mx-auto">
+                    <h2>Wspierają nas</h2>
+                    <p className="lead">
+                        Ponizej znajdziesz listę firm, które pomogły nam zorganizować to wydarzenie
+                    </p>
+                </Col>
+            </Row>
+            <Row className="d-flex justify-content-center">
+                <Col className="d-flex align-items-center bg-white rounded mx-3 px-5">
+                    <Image
+                        src="wpengine.png" fluid/>
+                </Col>
+                <Col className="d-flex align-items-center bg-white rounded mx-3 px-5">
+                    <Image
+                        src="deployed.png" fluid/>
+                </Col>
+                <Col className="d-flex align-items-center bg-white rounded mx-3 px-5">
+                    <Image
+                        src="grafana.png" fluid/>
+                </Col>
+            </Row>
         </Container>
+        </div>
     );
 }
 

@@ -6,6 +6,14 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-padding: 200px;
+  overflow-x: hidden;
+  background: rgb(0,0,0);
+  background: linear-gradient(30deg, rgba(136,34,152,1) 0%, rgba(0,0,0,1) 15%, rgba(0,0,0,1) 85%, rgba(0,212,255,1) 100%);  
+  position: relative;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 code {
