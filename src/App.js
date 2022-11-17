@@ -29,7 +29,7 @@ function App() {
         onHide={() => setModalShow(false)}
         info={modalInfo}
       />
-      <img 
+      {/* <img 
       src="./kernel.svg"
       style={{
         position: 'absolute',
@@ -37,7 +37,7 @@ function App() {
         right: '-10%',
         zIndex: -1
       }}
-      className="opacity-25"/>
+      className="opacity-25"/> */}
       <div style={{
         position: 'absolute',
         top: 0,

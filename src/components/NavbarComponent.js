@@ -3,8 +3,14 @@ import { Container, Navbar, Nav } from 'react-bootstrap';
 
 function NavbarComponent() {
     return(
-        <Navbar bg="black" variant="dark" expand="lg" className="sticky-top">
-        <Container className="py-3">
+        <Navbar expand="lg" variant="dark" className="text-white sticky-top rounded">
+        <Container fluid className="p-3 m-2 rounded" style={{
+            background: 'rgba(0, 0, 0, 0.8)',
+            boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+            backdropFilter: 'blur(5px)',
+            border: '1px solid rgba(0, 0, 0, 0.3)',
+            color: '#fff'
+        }}>
             <Navbar.Brand href="#top" className="d-flex align-items-center">
                 <img
                 alt=""

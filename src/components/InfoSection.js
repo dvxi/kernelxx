@@ -62,15 +62,15 @@ const InfoSection = () => {
                 </Col>
             </Row>
             <Row className="d-flex justify-content-center">
-                <Col className="d-flex align-items-center bg-white rounded mx-3 px-5">
+                <Col xs={8} lg={3} className="d-flex align-items-center bg-white rounded m-3 px-5" style={{ height: '10em' }}>
                     <Image
                         src="wpengine.png" fluid/>
                 </Col>
-                <Col className="d-flex align-items-center bg-white rounded mx-3 px-5">
+                <Col xs={8} lg={3} className="d-flex align-items-center bg-white rounded m-3 px-5" style={{ height: '10em' }}>
                     <Image
                         src="deployed.png" fluid/>
                 </Col>
-                <Col className="d-flex align-items-center bg-white rounded mx-3 px-5">
+                <Col xs={8} lg={3} className="d-flex align-items-center bg-white rounded m-3 px-5" style={{ height: '10em' }}>
                     <Image
                         src="grafana.png" fluid/>
                 </Col>

@@ -20,35 +20,11 @@ function WelcomeSection() {
             <Col xs={9} lg={6}>
               <h1 className='display-1'>KERNEL XX ROCZNICA DZIAŁALNOŚCI</h1>
             </Col>
-            {/* <Col xs={12} lg={{ span: 4, offset: 2}} className="mt-5 mt-lg-0">
-              {<Row xs="5" lg="2" className='d-flex flex-lg-wrap justify-content-end'>
-                <Col className="mb-lg-3">
-                    <Image
-                    src="nvidia.png" rounded fluid/>
-                </Col>
-                <Col className="mb-lg-3">
-                    <Image
-                    src="nvidia.png" rounded fluid/>
-                </Col>
-                <Col className="mb-lg-3">
-                    <Image
-                    src="nvidia.png" rounded fluid/>
-                </Col>
-                <Col className="mb-lg-3">
-                    <Image
-                    src="nvidia.png" rounded fluid/>
-                </Col>
-                <Col className="mb-lg-3">
-                    <Image
-                    src="nvidia.png" rounded fluid/>
-                </Col>
-              </Row>}
-            </Col> */}
           </Row>
-          <Row className="d-flex flex-row flex-nowrap overflow-auto">
+          <Row className="d-flex flex-row flex-nowrap overflow-auto justify-content-center" style={{ marginTop: '200px' }}>
             {
               partners.map((partner) => (
-                  <Col className="d-flex align-items-center bg-white rounded mx-1 px-3 py-3">
+                  <Col xs={3} lg={1} className="d-flex align-items-center bg-white rounded mx-1 px-3 py-3">
                       <Image
                           src={partner} fluid/>
                   </Col>
@@ -62,7 +38,7 @@ function WelcomeSection() {
                   <img
                     className="d-block w-100"
                     src="car1.png"
-                    alt="First slide"
+                    alt="Uczestnicy na sali wykładowej"
                   />
                 </Carousel.Item>
               </Carousel>
