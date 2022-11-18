@@ -1,5 +1,5 @@
 import { React, useState} from 'react';
-import { Container, Col, Row, Image, Carousel } from 'react-bootstrap';
+import { Col, Row, Carousel } from 'react-bootstrap';
 
 import NavbarComponent from './components/NavbarComponent';
 import WelcomeSection from './components/WelcomeSection';
@@ -22,6 +22,19 @@ function App() {
     <div>
       <NavbarComponent />
       <WelcomeSection />
+      {/* <Row className="m-5">
+        <Col xs={12}>
+          <Carousel>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="car1.png"
+                alt="First slide"
+              />
+            </Carousel.Item>
+          </Carousel>
+        </Col>
+      </Row> */}
       <InfoSection />
       <AgendaSection handleModal={handleModal}/>
       <InfoModal

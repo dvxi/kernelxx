@@ -109,17 +109,13 @@ const AgendaSection = (props) => {
                             <Row className="my-3" onClick={() => props.handleModal(event)}>
                             <Col xs={8} lg={9} className="d-flex align-items-center">
                                 <div className='w-100 text-end'>
-                                    <h3 className="mb-0">{event.name}</h3>
-                                    <p class="lead mb-0">{event.time}</p>
+                                    <h5 className="mb-0">{event.name}</h5>
+                                    <p class="mb-0">{event.time}</p>
                                     <p class="text-secondary d-none d-lg-block">{event.author}</p>
                                 </div>
                             </Col>
                             <Col xs={4} lg={3}>
-                                <Card bg='dark' className="p-lg-3" style={{ 'border-radius': '15px' }}>
-                                    <Card.Body className="text-center display-lg-6">
-                                        <h3 className="display-6">{event.icon}</h3>
-                                    </Card.Body>
-                                </Card>
+                                <h3 className="display-6">{event.icon}</h3>
                             </Col>
                         </Row>
                     ))
@@ -130,17 +126,13 @@ const AgendaSection = (props) => {
                 {
                     events.B.map((event) => (
                         <Row className="my-3" onClick={() => props.handleModal(event)}>
-                            <Col xs={4} lg={3}>
-                                <Card bg='dark' className="p-lg-3" style={{ 'border-radius': '15px' }}>
-                                    <Card.Body className="text-center">
-                                        <h3 className="display-6">{event.icon}</h3>
-                                    </Card.Body>
-                                </Card>
+                            <Col xs={4} lg={3} className="text-end">
+                                <h3 className="display-6">{event.icon}</h3>
                             </Col>
                             <Col xs={8} lg={9} className="d-flex align-items-center">
                                 <div>
-                                    <h3 className="mb-0">{event.name}</h3>
-                                    <p class="lead mb-0">{event.time}</p>
+                                    <h5 className="mb-0">{event.name}</h5>
+                                    <p class="mb-0">{event.time}</p>
                                     <p class="text-secondary d-none d-lg-block">{event.author}</p>
                                 </div>
                             </Col>
@@ -166,17 +158,13 @@ const AgendaSection = (props) => {
                             <Row className="my-3" onClick={() => props.handleModal(event)}>
                             <Col xs={8} lg={9} className="d-flex align-items-center">
                                 <div className='w-100 text-end'>
-                                    <h3 className="mb-0">{event.name}</h3>
-                                    <p class="lead mb-0">{event.time}</p>
+                                    <h5 className="mb-0">{event.name}</h5>
+                                    <p class="mb-0">{event.time}</p>
                                     <p class="text-secondary d-none d-lg-block">Warsztaty poprowadzi specjalista z branży Adrian Żarno. Opowie nam o...</p>
                                 </div>
                             </Col>
                             <Col xs={4} lg={3}>
-                                <Card bg='dark' className="p-lg-3" style={{ 'border-radius': '15px' }}>
-                                    <Card.Body className="text-center display-lg-6">
-                                        <h3 className="display-6">{event.icon}</h3>
-                                    </Card.Body>
-                                </Card>
+                                <h5 className="display-6">{event.icon}</h5>
                             </Col>
                         </Row>
                     ))
@@ -187,17 +175,13 @@ const AgendaSection = (props) => {
                 {
                     courses.B.map((event) => (
                         <Row className="my-3" onClick={() => props.handleModal(event)}>
-                            <Col xs={4} lg={3}>
-                                <Card bg='dark' className="p-lg-3" style={{ 'border-radius': '15px' }}>
-                                    <Card.Body className="text-center">
-                                        <h3 className="display-6">{event.icon}</h3>
-                                    </Card.Body>
-                                </Card>
+                            <Col xs={4} lg={3} className="text-end">
+                                <h5 className="display-6">{event.icon}</h5>
                             </Col>
                             <Col xs={8} lg={9} className="d-flex align-items-center">
                                 <div>
-                                    <h3 className="mb-0">{event.name}</h3>
-                                    <p class="lead mb-0">{event.time}</p>
+                                    <h5 className="mb-0">{event.name}</h5>
+                                    <p class="mb-0">{event.time}</p>
                                     <p class="text-secondary d-none d-lg-block">Warsztaty poprowadzi specjalista z branży Adrian Żarno. Opowie nam o...</p>
                                 </div>
                             </Col>
