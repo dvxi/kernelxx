@@ -6,6 +6,7 @@ import WelcomeSection from './components/WelcomeSection';
 import InfoSection from './components/InfoSection';
 import AgendaSection from './components/AgendaSection';
 import InfoModal from './components/InfoModal';
+import FooterSection from "./components/FooterSection";
 
 function App() {
 
@@ -60,6 +61,7 @@ function App() {
         width: '80vw',
         height: '80vw'
       }}></div>
+        <FooterSection />
     </div>
   );
 }

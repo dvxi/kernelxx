@@ -1,8 +1,21 @@
 import React from 'react';
-import { Container, Row, Col, Card } from 'react-bootstrap';
+import {Container, Row, Col, Card, Image} from 'react-bootstrap';
 import { IoLaptopOutline, IoGlobeOutline } from 'react-icons/io5';
-import { SiExpo } from 'react-icons/si';
+import { SiExpo, SiOculus, SiGrafana } from 'react-icons/si';
 import { GiRobotGrab } from 'react-icons/gi';
+import { BsFillCartFill, BsBug, BsPauseBtnFill, BsCalculatorFill } from 'react-icons/bs';
+import { MdAspectRatio } from 'react-icons/md';
+
+const partners = [
+    'abb.png',
+    'allegro.png',
+    'cyfronet.png',
+    'deployed.png',
+    'expo.png',
+    'grafana.png',
+    'niebezpiecznik.png',
+    'wpengine.png'
+]
 
 const AgendaSection = (props) => {
 
@@ -11,38 +24,44 @@ const AgendaSection = (props) => {
             {
                 name: 'Allegro',
                 time: '10:00 - 11:00',
-                icon: <IoLaptopOutline/>,
-                author: 'Jan Kowalski',
+                icon: <BsFillCartFill/>,
+                author: '',
+                description: 'Opis wydarzenia pojawi się wkrótce. Obserwuj nasz profil na facebooku aby być na bieżąco!',
             },
             {
                 name: 'Deployed',
                 time: '11:00 - 12:00',
-                icon: <IoLaptopOutline/>,
-                author: 'Jan Kowalski',
+                icon: <MdAspectRatio/>,
+                author: '',
+                description: 'Opis wydarzenia pojawi się wkrótce. Obserwuj nasz profil na facebooku aby być na bieżąco!',
             },
             {
                 name: 'Grafana',
                 time: '12:00 - 13:00',
-                icon: <IoLaptopOutline/>,
-                author: 'Jan Kowalski',
+                icon: <SiGrafana/>,
+                author: '',
+                description: 'Opis wydarzenia pojawi się wkrótce. Obserwuj nasz profil na facebooku aby być na bieżąco!',
             },
             {
                 name: 'WP Engine',
                 time: '13:00 - 14:00',
                 icon: <IoLaptopOutline/>,
-                author: 'Jan Kowalski',
+                author: '',
+                description: 'Opis wydarzenia pojawi się wkrótce. Obserwuj nasz profil na facebooku aby być na bieżąco!',
             },
             {
                 name: 'Expo',
                 time: '14:00 - 15:00',
                 icon: <SiExpo/>,
-                author: 'Jan Kowalski',
+                author: '',
+                description: 'Opis wydarzenia pojawi się wkrótce. Obserwuj nasz profil na facebooku aby być na bieżąco!',
             },
             {
                 name: 'Niebezpiecznik',
                 time: '15:00 - 16:00',
-                icon: <IoGlobeOutline/>,
-                author: 'Jan Kowalski',
+                icon: <BsBug/>,
+                author: '',
+                description: 'Opis wydarzenia pojawi się wkrótce. Obserwuj nasz profil na facebooku aby być na bieżąco!',
             }
         ],
         B: [
@@ -50,25 +69,29 @@ const AgendaSection = (props) => {
                 name: 'ABB',
                 time: '10:00 - 11:00',
                 icon: <GiRobotGrab/>,
-                author: 'Jan Kowalski',
+                author: '',
+                description: 'Opis wydarzenia pojawi się wkrótce. Obserwuj nasz profil na facebooku aby być na bieżąco!',
             },
             {
-                name: 'Cyfronet',
+                name: 'Cyfronet AGH',
                 time: '11:00 - 12:00',
-                icon: <IoLaptopOutline/>,
-                author: 'Jan Kowalski',
+                icon: <BsCalculatorFill/>,
+                author: '',
+                description: 'Opis wydarzenia pojawi się wkrótce. Obserwuj nasz profil na facebooku aby być na bieżąco!',
             },
             {
                 name: 'Przerwa',
                 time: '12:00 - 13:00',
-                icon: <IoLaptopOutline/>,
-                author: 'Jan Kowalski',
+                icon: <BsPauseBtnFill/>,
+                author: '',
+                description: 'Opis wydarzenia pojawi się wkrótce. Obserwuj nasz profil na facebooku aby być na bieżąco!',
             },
             {
-                name: 'Rusiek',
+                name: 'KN BIT',
                 time: '13:00 - 14:00',
                 icon: <IoLaptopOutline/>,
-                author: 'Jan Kowalski',
+                author: 'Szymon Rusiecki',
+                description: 'Opis wydarzenia pojawi się wkrótce. Obserwuj nasz profil na facebooku aby być na bieżąco!',
             }
         ]
     }
@@ -77,15 +100,25 @@ const AgendaSection = (props) => {
         A: [
             {
                 name: 'Deployed',
-                time: '16:00 - 17:00',
-                icon: <IoLaptopOutline/>
+                time: '12:00 - 14:00',
+                icon: <MdAspectRatio/>,
+                description: 'Opis wydarzenia pojawi się wkrótce. Obserwuj nasz profil na facebooku aby być na bieżąco!',
             }
         ],
         B: [
             {
                 name: 'Allegro',
-                time: '16:00 - 17:00',
-                icon: <IoLaptopOutline/>
+                time: '12:00 - 14:00',
+                icon: <BsFillCartFill/>,
+                description: 'Opis wydarzenia pojawi się wkrótce. Obserwuj nasz profil na facebooku aby być na bieżąco!',
+            }
+        ],
+        C: [
+            {
+                name: 'Sala VR/AR',
+                time: '10:00 - 16:00',
+                icon: <SiOculus/>,
+                description: 'Opis wydarzenia pojawi się wkrótce. Obserwuj nasz profil na facebooku aby być na bieżąco!',
             }
         ]
     }
@@ -160,7 +193,7 @@ const AgendaSection = (props) => {
                                 <div className='w-100 text-end'>
                                     <h5 className="mb-0">{event.name}</h5>
                                     <p class="mb-0">{event.time}</p>
-                                    <p class="text-secondary d-none d-lg-block">Warsztaty poprowadzi specjalista z branży Adrian Żarno. Opowie nam o...</p>
+                                    <p class="text-secondary d-none d-lg-block">Temat warsztatów pojawi się w krótce. Obserwujcie nasz profil na Facebooku po najświesze aktualizacje!</p>
                                 </div>
                             </Col>
                             <Col xs={4} lg={3}>
@@ -182,7 +215,27 @@ const AgendaSection = (props) => {
                                 <div>
                                     <h5 className="mb-0">{event.name}</h5>
                                     <p class="mb-0">{event.time}</p>
-                                    <p class="text-secondary d-none d-lg-block">Warsztaty poprowadzi specjalista z branży Adrian Żarno. Opowie nam o...</p>
+                                    <p class="text-secondary d-none d-lg-block">Temat warsztatów pojawi się w krótce. Obserwujcie nasz profil na Facebooku po najświesze aktualizacje!</p>
+                                </div>
+                            </Col>
+                        </Row>
+                    ))
+                }
+                </Col>
+                <Col>
+                <h2 className='text-center mb-5'>Sala 204</h2>
+                {
+                    courses.C.map((event) => (
+                        <Row className="my-3" onClick={() => props.handleModal(event)}>
+                            <Col xs={4} lg={3} className="text-end">
+                                <h5 className="display-6">{event.icon}</h5>
+                            </Col>
+                            <Col xs={8} lg={9} className="d-flex align-items-center">
+                                <div>
+                                    <h5 className="mb-0">{event.name}</h5>
+                                    <p class="mb-0">{event.time}</p>
+                                    <p class="text-secondary d-none d-lg-block">Chciałbyś zobaczyć jak działają gogle wirtualnej rzeczywistości? 
+                                    Przez cały dzień masz niesamowitą okazję pobawić się wysokiej klasy sprzętem i stworzyć ciekawy projekt.</p>
                                 </div>
                             </Col>
                         </Row>
@@ -190,6 +243,26 @@ const AgendaSection = (props) => {
                 }
                 </Col>
             </Row>
+            <Row className="text-center">
+                <Col xs={9} lg={6} className="mx-auto">
+                    <h2>Prelegenci</h2>
+                    <p className="lead">
+                        Wiedzą podzielą się specjaliści z najwyższej półki
+                    </p>
+                </Col>
+            </Row>
+
+            <Row className="justify-content-center">
+                {
+                    partners.map((partner) => (
+                        <Col xs={4} lg={1} className="d-flex align-items-center bg-white rounded m-2 px-3 py-3">
+                            <Image
+                                src={partner} fluid/>
+                        </Col>
+                    ))
+                }
+            </Row>
+
         </Container>
     );
 }
