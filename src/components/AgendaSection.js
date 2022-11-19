@@ -178,7 +178,7 @@ const AgendaSection = (props) => {
                         <h2>Warsztaty</h2>
                         <p className="lead">
                             Poniżej znajdziesz listę warsztatów,
-                            które zwieńczą ten pełen w wiedzę dzień
+                            które zwieńczą ten pełny wiedzy dzień
                         </p>
                     </div>
                 </Col>
