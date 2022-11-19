@@ -9,12 +9,12 @@ const InfoSection = () => {
         {
             icon: <IoSchoolOutline className="me-3" />,
             title: '10',
-            text: 'Róznych wykładów'
+            text: 'Wykładów'
         },
         {
             icon: <IoConstructOutline className="me-3" />,
             title: '2',
-            text: 'Warsztaty do wyboru'
+            text: 'Warsztaty'
         },
         {
             icon: <IoLaptopOutline className="me-3" />,
