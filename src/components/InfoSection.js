@@ -25,6 +25,23 @@ const InfoSection = () => {
     return (
         <div>
         <Container className="py-5" id="info">
+            <Row className="text-center my-5">
+                <Col xs={9} lg={6} className="mx-auto">
+                    <h2>Kiedy i gdzie?</h2>
+                </Col>
+            </Row>
+            <Row className="text-center my-5 justify-content-center">
+                <Col xs={12} lg={6}>
+                    <Card bg="dark" className="p-3" style={{ borderRadius: 15 }}>
+                        <Card.Body>
+                            <p className="m-0 lead" style={{ fontWeight: 500 }}>
+                                3 grudnia 2022r <br />
+                                Budynek D-10 AGH
+                            </p>
+                        </Card.Body>
+                    </Card>
+                </Col>
+            </Row>
             <Row className="text-center">
                 <Col xs={9} lg={6} className="mx-auto">
                     <h2>Co będzie na wydarzeniu?</h2>
@@ -62,16 +79,16 @@ const InfoSection = () => {
                 </Col>
             </Row>
             <Row className="d-flex justify-content-center">
-                <Col xs={8} lg={3} className="d-flex align-items-center bg-white rounded m-3 px-5" style={{ height: '10em' }}>
-                    <Image
+                <Col xs={12} lg={4} className="px-5 d-flex justify-content-center my-2">
+                    <Image style={{ borderRadius: 15 }}
                         src="wpengine.png" fluid/>
                 </Col>
-                <Col xs={8} lg={3} className="d-flex align-items-center bg-white rounded m-3 px-5" style={{ height: '10em' }}>
-                    <Image
+                <Col xs={12} lg={4} className="px-5 d-flex justify-content-center my-2">
+                    <Image style={{ borderRadius: 15 }}
                         src="deployed.png" fluid/>
                 </Col>
-                <Col xs={8} lg={3} className="d-flex align-items-center bg-white rounded m-3 px-5" style={{ height: '10em' }}>
-                    <Image
+                <Col xs={12} lg={4} className="px-5 d-flex justify-content-center my-2">
+                    <Image style={{ borderRadius: 15 }}
                         src="grafana.png" fluid/>
                 </Col>
             </Row>

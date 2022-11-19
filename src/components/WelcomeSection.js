@@ -15,33 +15,26 @@ const partners = [
 function WelcomeSection() {
     return (
         <div>
-        <Container>
-          <Row className="my-5">
-            <Col xs={9} lg={6}>
-              <h1 className='display-1'>KERNEL XX ROCZNICA DZIAŁALNOŚCI</h1>
+        <Container className="vh-100">
+          <Row style={{ alignContent: 'center', height: '100%' }}>
+            <Col xs={12} lg={6} className="mb-5">
+              <h1 className='display-1' style={{ fontWeight: 600 }}>Kernel20</h1>
+              <p className="lead">
+                To oficjalna, otwarta Konferencja IT, zorganizowana w ramach obchodów Jubileuszu XX-lecia działalności Koła Naukowego Informatyków Kernel
+              </p>
             </Col>
-          </Row>
-          <Row className="d-flex flex-row flex-nowrap overflow-auto justify-content-center" style={{ marginTop: '200px' }}>
-            {
-              partners.map((partner) => (
-                  <Col xs={3} lg={1} className="d-flex align-items-center bg-white rounded mx-1 px-3 py-3">
-                      <Image
-                          src={partner} fluid/>
-                  </Col>
-              ))
-            }
-          </Row>
-          <Row className="my-5">
-            <Col xs={12}>
-              <Carousel>
-                <Carousel.Item>
-                  <img
-                    className="d-block w-100"
-                    src="car1.png"
-                    alt="Uczestnicy na sali wykładowej"
-                  />
-                </Carousel.Item>
-              </Carousel>
+            <Col xs={12} lg={6}></Col>
+            <Col>
+              <Row className="justify-content-center">
+              {
+                partners.map((partner) => (
+                    <Col xs={4} lg={1} className="d-flex align-items-center bg-white rounded m-2 px-3 py-3">
+                        <Image
+                            src={partner} fluid/>
+                    </Col>
+                ))
+              }
+              </Row>
             </Col>
           </Row>
         </Container>
