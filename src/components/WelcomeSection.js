@@ -17,7 +17,7 @@ function WelcomeSection() {
         <div>
         <Container className="vh-100">
           <Row className="my-5 my-lg-0" style={{ alignContent: 'center', height: '100%' }}>
-            <Col xs={12} lg={6} className="mb-5">
+            <Col xs={12} lg={6} className="mb-5" data-aos="fade-right">
               <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style={{
                 position: 'absolute' ,
                 left: 0,
