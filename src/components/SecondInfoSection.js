@@ -85,7 +85,7 @@ return (
       </Row>
       </Container>
       <Container flex className="text-center py-2">
-        <p>Projekt i wykonanie: <a href="https://www.linkedin.com/in/szymongwozdz/" style={{
+        <p>Projekt i wykonanie: <a rel="nofollow" href="https://www.linkedin.com/in/szymongwozdz/" style={{
             textDecoration: 'none',
             color: 'white',
             fontWeight: 600,
