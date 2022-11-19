@@ -70,7 +70,7 @@ return (
         </Col>
       </Row>
       <Row className="text-center my-5 justify-content-center">
-        <Col xs={12} lg={6}>
+        <Col xs={8} lg={6}>
           <Card className="p-3 text-black" style={{ borderRadius: 15 }} data-aos="zoom-in">
             <Card.Body>
                 <h3>

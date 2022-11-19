@@ -91,19 +91,19 @@ const InfoSection = () => {
                 </Col>
             </Row>
             <Row className="d-flex justify-content-center">
-                <Col xs={12} lg={3} className="px-3 d-flex justify-content-center my-2" data-aos="zoom-in">
+                <Col xs={8} lg={3} className="px-3 d-flex justify-content-center my-2" data-aos="zoom-in">
                     <Image style={{ borderRadius: 15 }}
                         src="wpengine.png" fluid/>
                 </Col>
-                <Col xs={12} lg={3} className="px-3 d-flex justify-content-center my-2" data-aos="zoom-in">
+                <Col xs={8} lg={3} className="px-3 d-flex justify-content-center my-2" data-aos="zoom-in">
                     <Image style={{ borderRadius: 15 }}
                         src="deployed.png" fluid/>
                 </Col>
-                <Col xs={12} lg={3} className="px-3 d-flex justify-content-center my-2" data-aos="zoom-in">
+                <Col xs={8} lg={3} className="px-3 d-flex justify-content-center my-2" data-aos="zoom-in">
                     <Image style={{ borderRadius: 15 }}
                         src="grafana.png" fluid/>
                 </Col>
-                <Col xs={12} lg={3} className="px-3 d-flex justify-content-center my-2" data-aos="zoom-in">
+                <Col xs={8} lg={3} className="px-3 d-flex justify-content-center my-2" data-aos="zoom-in">
                     <Image style={{ borderRadius: 15 }}
                         src="nokia.jpg" fluid/>
                 </Col>
