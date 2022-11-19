@@ -4,7 +4,7 @@ import { Container, Navbar, Nav } from 'react-bootstrap';
 function NavbarComponent() {
     return(
         <Navbar expand="lg" variant="dark" className="text-white sticky-top rounded">
-        <Container fluid className="p-3 m-2 rounded" style={{
+        <Container fluid className="p-3 m-2 mx-3 rounded" style={{
             background: 'rgba(0, 0, 0, 0.8)',
             boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
             backdropFilter: 'blur(5px)',

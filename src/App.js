@@ -1,11 +1,12 @@
-import { React, useState} from 'react';
-import { Col, Row, Carousel } from 'react-bootstrap';
+import { React, useState } from 'react';
+import { Col, Row, Image, Card } from 'react-bootstrap';
 
 import NavbarComponent from './components/NavbarComponent';
 import WelcomeSection from './components/WelcomeSection';
 import InfoSection from './components/InfoSection';
 import AgendaSection from './components/AgendaSection';
 import InfoModal from './components/InfoModal';
+import SecondInfoSection from './components/SecondInfoSection';
 
 function App() {
 
@@ -22,19 +23,6 @@ function App() {
     <div>
       <NavbarComponent />
       <WelcomeSection />
-      {/* <Row className="m-5">
-        <Col xs={12}>
-          <Carousel>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="car1.png"
-                alt="First slide"
-              />
-            </Carousel.Item>
-          </Carousel>
-        </Col>
-      </Row> */}
       <InfoSection />
       <AgendaSection handleModal={handleModal}/>
       <InfoModal
@@ -51,6 +39,7 @@ function App() {
         zIndex: -1
       }}
       className="opacity-25"/> */}
+      <SecondInfoSection />
       <div style={{
         position: 'absolute',
         top: 0,
