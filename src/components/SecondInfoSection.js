@@ -70,8 +70,8 @@ return (
         </Col>
       </Row>
       <Row className="text-center my-5 justify-content-center">
-        <Col xs={8} lg={6}>
-          <Card className="p-3 text-black" style={{ borderRadius: 15 }} data-aos="zoom-in">
+        <Col xs={8} lg={6} className="mb-5">
+          <Card className="p-3 text-black mb-5" style={{ borderRadius: 15 }} data-aos="zoom-in">
             <Card.Body>
                 <h3>
                 3 grudnia 2022r
@@ -83,6 +83,13 @@ return (
           </Card>
         </Col>
       </Row>
+      </Container>
+      <Container flex className="text-center py-2">
+        <p>Projekt i wykonanie: <a href="https://www.linkedin.com/in/szymongwozdz/" style={{
+            textDecoration: 'none',
+            color: 'white',
+            fontWeight: 600,
+        }}>Szymon Gwóźdź</a></p>
       </Container>
     </div>
     );
