@@ -14,7 +14,7 @@ function NavbarComponent() {
                 <Navbar.Brand href="#top" className="d-flex align-items-center">
                     <img
                     alt=""
-                    src="/kernel.svg"
+                    src="./kernel.svg"
                     width="40"
                     height="40"
                     className="d-inline-block align-top me-2"

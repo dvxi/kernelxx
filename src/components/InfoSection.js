@@ -9,12 +9,12 @@ const InfoSection = () => {
         {
             icon: <IoSchoolOutline className="me-3" />,
             title: '10',
-            text: 'Róznych wykładów'
+            text: 'Prelekcji'
         },
         {
             icon: <IoConstructOutline className="me-3" />,
             title: '2',
-            text: 'Warsztaty do wyboru'
+            text: 'Warsztaty'
         },
         {
             icon: <IoLaptopOutline className="me-3" />,
@@ -46,8 +46,8 @@ const InfoSection = () => {
                     <div data-aos="fade-left">
                         <h2>Co będzie na wydarzeniu?</h2>
                         <p className="lead">
-                            Wydarzenie obejmować będzie 2 równoległe serie wykładów, oraz warsztaty.
-                            To pierwsze wydarzenie tego rodzaju w historii istnienia koła więc nie może Cie zabraknąć!
+                            Wydarzenie obejmować będzie 2 równoległe serie wykładów oraz warsztaty.
+                            To pierwsze wydarzenie tego rodzaju w historii istnienia koła, więc nie może Cię zabraknąć!
                         </p>
                     </div>
                 </Col>

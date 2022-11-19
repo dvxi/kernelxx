@@ -33,8 +33,8 @@ return (
                     <div data-aos="fade-left">
                         <h2>Prelegenci</h2>
                         <p className="lead">
-                            Oto prelegetnci, którzy zapewnią nam<br />
-                            najwyzszej jakości wiedzę z sektora IT
+                            Prelegenci z czołowych firm zapewnią <br/>
+                            wartościową wiedzę przez cały dzień
                         </p>
                     </div>
                 </Col>
@@ -62,9 +62,9 @@ return (
             <path fill="#08BDBA" d="M29.3,-49.2C39.7,-44.7,51.1,-40.4,60.6,-32.2C70.1,-24.1,77.7,-12,78.5,0.5C79.3,13,73.4,26,63.7,33.8C54.1,41.7,40.6,44.4,29.4,54.4C18.1,64.4,9.1,81.6,-2.3,85.7C-13.7,89.7,-27.5,80.6,-41.6,72.3C-55.8,63.9,-70.3,56.5,-78.8,44.5C-87.3,32.6,-89.7,16.3,-88.3,0.8C-86.8,-14.6,-81.4,-29.3,-73,-41.2C-64.5,-53.2,-53,-62.5,-40.3,-65.7C-27.6,-68.9,-13.8,-66,-2.2,-62.2C9.4,-58.4,18.8,-53.7,29.3,-49.2Z" transform="translate(100 100)" />
         </svg>
             <div data-aos="fade-right">
-                <h2>Kiedy i gdzie?</h2>
+                <h2>Save the date</h2>
                 <p className="lead">
-                Zapraszamy wszystkich zainteresowanych, <b>nie tylko studentów</b>. I pamiętajcie, wstęp jest <b>darmowy</b>
+                Zapraszamy wszystkich zainteresowanych, <b>nie tylko studentów</b>. <br/><br/>Wstęp <b>wolny</b>
                 </p>
             </div>
         </Col>
