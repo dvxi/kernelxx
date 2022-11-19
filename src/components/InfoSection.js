@@ -92,13 +92,13 @@ const InfoSection = () => {
                 </Col>
             </Row>
             <Row className="d-flex justify-content-center">
-                <Col xs={8} lg={3} className="px-3 d-flex justify-content-center my-2 jumpy" data-aos="zoom-in">
-                    <Image style={{ borderRadius: 15 }}
-                        src="nokia.jpg" fluid/>
+                <Col xs={12} lg={12} className="px-3 d-flex justify-content-center my-2 jumpy" data-aos="zoom-in">
+                    <Image className="p-4 p-lg-0 mb-4 mb-lg-5 bg-white" style={{ borderRadius: 15, boxShadow: '7px 7px rgb(89, 199, 210)' }}
+                        src="wpengine.png" fluid/>
                 </Col>
                 <Col xs={8} lg={3} className="px-3 d-flex justify-content-center my-2 jumpy" data-aos="zoom-in">
                     <Image style={{ borderRadius: 15 }}
-                        src="wpengine.png" fluid/>
+                        src="nokia.jpg" fluid/>
                 </Col>
                 <Col xs={8} lg={3} className="px-3 d-flex justify-content-center my-2 jumpy" data-aos="zoom-in">
                     <Image style={{ borderRadius: 15 }}
