@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card, Image } from 'react-bootstrap';
 import { IoSchoolOutline, IoLaptopOutline, IoConstructOutline } from 'react-icons/io5';
+import { SiOculus } from 'react-icons/si';
 
 const InfoSection = () => {
 
@@ -8,22 +9,22 @@ const InfoSection = () => {
         {
             icon: <IoSchoolOutline className="me-3" />,
             title: '10',
-            text: 'róznych wykładów'
+            text: 'Róznych wykładów'
         },
         {
             icon: <IoConstructOutline className="me-3" />,
             title: '2',
-            text: 'warsztaty do wyboru'
+            text: 'Warsztaty do wyboru'
         },
         {
             icon: <IoLaptopOutline className="me-3" />,
             title: '8',
-            text: 'firm z branzy IT'
+            text: 'Firm z branzy IT'
         },
         {
-            icon: <IoLaptopOutline className="me-3" />,
+            icon: <SiOculus className="me-3" />,
             title: '15',
-            text: 'stanowisk z goglami VR'
+            text: 'Stanowisk z goglami VR'
         }
     ]
 
@@ -91,21 +92,21 @@ const InfoSection = () => {
                 </Col>
             </Row>
             <Row className="d-flex justify-content-center">
-                <Col xs={8} lg={3} className="px-3 d-flex justify-content-center my-2" data-aos="zoom-in">
+                <Col xs={8} lg={3} className="px-3 d-flex justify-content-center my-2 jumpy" data-aos="zoom-in">
+                    <Image style={{ borderRadius: 15 }}
+                        src="nokia.jpg" fluid/>
+                </Col>
+                <Col xs={8} lg={3} className="px-3 d-flex justify-content-center my-2 jumpy" data-aos="zoom-in">
                     <Image style={{ borderRadius: 15 }}
                         src="wpengine.png" fluid/>
                 </Col>
-                <Col xs={8} lg={3} className="px-3 d-flex justify-content-center my-2" data-aos="zoom-in">
+                <Col xs={8} lg={3} className="px-3 d-flex justify-content-center my-2 jumpy" data-aos="zoom-in">
                     <Image style={{ borderRadius: 15 }}
                         src="deployed.png" fluid/>
                 </Col>
-                <Col xs={8} lg={3} className="px-3 d-flex justify-content-center my-2" data-aos="zoom-in">
+                <Col xs={8} lg={3} className="px-3 d-flex justify-content-center my-2 jumpy" data-aos="zoom-in">
                     <Image style={{ borderRadius: 15 }}
                         src="grafana.png" fluid/>
-                </Col>
-                <Col xs={8} lg={3} className="px-3 d-flex justify-content-center my-2" data-aos="zoom-in">
-                    <Image style={{ borderRadius: 15 }}
-                        src="nokia.jpg" fluid/>
                 </Col>
             </Row>
         </Container>

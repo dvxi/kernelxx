@@ -73,7 +73,7 @@ return (
         <Col xs={8} lg={6} className="mb-5">
           <Card className="p-3 text-black mb-5" style={{ borderRadius: 15 }} data-aos="zoom-in">
             <Card.Body>
-                <h3>
+                <h3 style={{ fontWeight: 700 }}>
                 3 grudnia 2022r
                 </h3>
               <p className="lead mb-0">
