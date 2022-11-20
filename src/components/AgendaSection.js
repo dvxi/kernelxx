@@ -15,62 +15,81 @@ const AgendaSection = (props) => {
                 time: '10:00 - 11:00',
                 icon: <BsFillCartFill/>,
                 author: '',
+                description: `Opis wydarzenia pojawi się wkrótce. <br />
+                    Obserwuj nasz profil na Facebooku by być na bieżąco!`,
             },
             {
                 name: 'Deployed',
                 time: '11:00 - 12:00',
                 icon: <MdAspectRatio/>,
                 author: '',
+                description: `Opis wydarzenia pojawi się wkrótce. <br />
+                    Obserwuj nasz profil na Facebooku by być na bieżąco!`,
             },
             {
-                name: 'Grafana',
+                name: 'Grafana - Observability 101',
                 time: '12:00 - 13:00',
                 icon: <SiGrafana/>,
                 author: '',
+                description: `Opis wydarzenia pojawi się wkrótce. <br />
+                    Obserwuj nasz profil na Facebooku by być na bieżąco!`,
             },
             {
-                name: 'WP Engine',
+                name: 'WP Engine: Czym jest DevOps - DevOps a Agile',
                 time: '13:00 - 14:00',
                 icon: <IoLaptopOutline/>,
                 author: '',
+                description: `"Automatyzacja wszystkiego" - to najważniejsza zasada w praktykach DevOps. 
+                Pogadamy o implementacji automatyzacji w praktyce, o tym czym jest CB, Jenkins, Terraform, Ansible. 
+                Opowiemy o tym, jakich języków programowania używamy na co dzień i innych ciekawych rzeczach.`,
             },
             {
                 name: 'Expo',
                 time: '14:00 - 15:00',
                 icon: <SiExpo/>,
                 author: '',
+                description: `Opis wydarzenia pojawi się wkrótce. <br />
+                    Obserwuj nasz profil na Facebooku by być na bieżąco!`,
             },
             {
-                name: 'Niebezpiecznik',
+                name: 'Niebezpiecznik - Wszystko da się zhackować.',
                 time: '15:00 - 16:00',
                 icon: <BsBug/>,
-                author: '',
+                author: 'Piotr Konieczny',
+                description: `Ten wykład jest tak tajny, że jego opis nie może zostać publicznie ujawniony. 
+                Z kolei to zdanie dodałem, bo organizatorzy wymagali co najmniej 2 zdań opisu.`,
             }
         ],
         B: [
             {
-                name: 'ABB',
+                name: 'ABB - VR w przemyśle',
                 time: '10:00 - 11:00',
                 icon: <GiRobotGrab/>,
                 author: '',
+                description: `Opis wydarzenia pojawi się wkrótce. <br />
+                    Obserwuj nasz profil na Facebooku by być na bieżąco!`,
             },
             {
                 name: 'Cyfronet',
                 time: '11:00 - 12:00',
                 icon: <BsCalculatorFill/>,
                 author: '',
+                description: `Opis wydarzenia pojawi się wkrótce. <br />
+                    Obserwuj nasz profil na Facebooku by być na bieżąco!`,
             },
             {
                 name: 'Przerwa',
                 time: '12:00 - 13:00',
                 icon: <BsPauseBtnFill/>,
                 author: '',
+                description: `Czas na małą przerwę`,
             },
             {
-                name: 'KN BIT',
+                name: 'KN BIT - Czy AI ukradnie nam pracę?',
                 time: '13:00 - 14:00',
                 icon: <IoLaptopOutline/>,
                 author: 'Szymon Rusiecki',
+                description: `Czyli kilka słów o tym czy i czego powinniśmy(?) się obawiać w nadchodzących latach, a także przedstawienie aktualnej konkurencji(?) na rynku pracy.`,
             }
         ]
     }
@@ -117,7 +136,8 @@ const AgendaSection = (props) => {
                         <h2>Agenda</h2>
                         <p className="lead">
                             Poniżej znajdziesz listę wydarzeń,
-                            które zaplanowaliśmy na ten wyjątkowy dzień
+                            które zaplanowaliśmy na ten wyjątkowy dzień. <br/>
+                            Kliknij w wydarzenie aby dowiedzieć się szczegółów
                         </p>
                     </div>
                 </Col>
@@ -127,7 +147,7 @@ const AgendaSection = (props) => {
                 <h2 className='text-center mb-5'>Sala A</h2>
                 {
                     events.A.map((event) => (
-                        <Row className="my-3" data-aos="fade-up">
+                        <Row className="my-3" data-aos="fade-up" onClick={() => props.handleModal(event)}>
                             <Col xs={8} lg={9} className="d-flex align-items-center">
                                 <div className='w-100 text-end'>
                                     <h5 className="mb-0">{event.name}</h5>
@@ -146,7 +166,7 @@ const AgendaSection = (props) => {
                 <h2 className='text-center mb-5'>Sala B</h2>
                 {
                     events.B.map((event) => (
-                        <Row className="my-3" data-aos="fade-up">
+                        <Row className="my-3" data-aos="fade-up" onClick={() => props.handleModal(event)}>
                             <Col xs={4} lg={3} className="text-end">
                                 <h3 className="display-6">{event.icon}</h3>
                             </Col>
@@ -178,7 +198,7 @@ const AgendaSection = (props) => {
                         <h2>Warsztaty</h2>
                         <p className="lead">
                             Poniżej znajdziesz listę warsztatów,
-                            które zwieńczą ten pełny wiedzy dzień
+                            które zwieńczą ten pełen wiedzy dzień
                         </p>
                     </div>
                 </Col>

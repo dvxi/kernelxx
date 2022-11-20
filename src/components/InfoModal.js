@@ -13,15 +13,11 @@ const InfoModal = (props) => {
             <Modal.Body className="p-4 rounded" style={{ backgroundColor: '#313131' }}>
                 <h4>Dowiedz się więcej</h4>
                 <p className="mb-4">
-                Jezeli chcesz wiedzieć więcej, odwiedź stronę wydarzenia.<br />
-                Tam znajdziesz informacje dotyczące wykładowców.
+                    {props.info.description}
                 </p>
                 <div className="d-grip gap-2">
-                    <Button variant="primary" size="lg">
-                        Strona wydarzenia
-                    </Button>{' '}
-                    <Button variant="outline-primary" size="lg">
-                        Strona Kernel
+                    <Button variant="outline-primary" size="lg" href="https://www.facebook.com/KNIKernel">
+                        Kliknij aby przejść na naszego Facebooka
                     </Button>
                 </div>
             </Modal.Body>

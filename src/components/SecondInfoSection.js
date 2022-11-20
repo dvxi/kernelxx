@@ -49,6 +49,18 @@ return (
                 ))
               }
       </Row>
+
+    <Row className="text-center my-5">
+        <Col xs={12} lg={6} className="mx-auto">
+            <div data-aos="fade-left">
+                <p className="lead">
+                    Wśród nich pojawi się też Piotr Konieczny - założyciel firmy <br/>
+                    Niebezpiecznik i były V-ce prezes KNI Kernel - ze swoim tajemniczym wykładem 👀
+                </p>
+            </div>
+        </Col>
+    </Row>
+
       <Row className="text-center my-5">
         <Col xs={12} lg={6} className="mx-auto">
         <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style={{
