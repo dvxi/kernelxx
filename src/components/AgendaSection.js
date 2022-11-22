@@ -11,12 +11,12 @@ const AgendaSection = (props) => {
     const events = {
         A: [
             {
-                name: 'Allegro',
+                name: 'Allegro - Ping Pong - nieblokujące IO w Javie',
                 time: '10:00 - 11:00',
                 icon: <BsFillCartFill/>,
-                author: '',
-                description: `Opis wydarzenia pojawi się wkrótce.`,
-                auth_desc: `Obserwuj nasz profil na Facebooku by być na bieżąco!`,
+                author: 'Arkadiusz Sokołowski',
+                description: `Nieblokujące operacje wejścia-wyjścia (NIO) pojawiły się już w Javie 1.4 z 2002 roku. Od tego czasu nieco zdążyły wyewoluować, powstało programowanie reaktywne, do drzwi puka projekt Loom mający ułatwić programowanie współbieżne. Co da się wycisnąć z NIO, kanałów i buforów? Jak pisać aplikacje sieciowe, aby wykorzystać możliwości NIO, i jak w ogóle to robić w Javie? O tym wszystkim będzie ta opowieść.`,
+                auth_desc: `Wykład poprowadzi Arkadiusz Sokołowski - Software Engineering Leader, Team Manager w Allegro`,
             },
             {
                 name: 'Deployed - Storybook a tworzenie komponentów w React',
@@ -84,7 +84,7 @@ const AgendaSection = (props) => {
             },
             {
                 name: 'KN BIT - Czy AI ukradnie nam pracę?',
-                time: '13:00 - 14:00',
+                time: '11:00 - 12:00',
                 icon: <IoLaptopOutline/>,
                 author: 'Szymon Rusiecki',
                 description: `Czyli kilka słów o tym czy i czego powinniśmy(?) się obawiać w nadchodzących latach, a także przedstawienie aktualnej konkurencji(?) na rynku pracy.
@@ -94,19 +94,19 @@ const AgendaSection = (props) => {
 
             {
                 name: 'Przerwa',
-                time: '12:00 - 13:00',
+                time: '12:00 - 14:00',
                 icon: <BsPauseBtnFill/>,
                 author: '',
                 description: `Czas na małą przerwę`,
                 auth_desc: ``,
             },
             {
-                name: 'Cyfronet',
-                time: '11:00 - 12:00',
+                name: 'Cyfronet - Superkomputery - krzemowy wyścig zbrojeń',
+                time: '14:00 - 15:00',
                 icon: <BsCalculatorFill/>,
-                author: '',
-                description: `Opis wydarzenia pojawi się wkrótce. `,
-                auth_desc: `Obserwuj nasz profil na Facebooku by być na bieżąco!`,
+                author: 'Marek Magryś',
+                description: `Prelekcja dotyczyć będzie współczesnych oraz przyszłych technologii wykorzystywanych do budowy superkomputerów, wyzwań jakim muszą stawiać czoła ich projektanci oraz możliwych zastosowań tych maszyn dla celów naukowych i przemysłowych. Przybliżona zostanie także historia i obecny stan wyścigu poszczególnych krajów w budowie największych superkomputerów na świecie oraz miejsce Polski w tym zestawieniu. Prelegent przedstawi też różnice między systemami peta i eksaskalowymi oraz podejmie próbę przewidzenia dalszych kierunków rozwoju architektur obliczeniowych, w tym komputerów kwantowych.`,
+                auth_desc: ``,
             },
 
         ]
@@ -124,9 +124,12 @@ const AgendaSection = (props) => {
         ],
         B: [
             {
-                name: 'Allegro',
+                name: 'Allegro - Podstawy testów automatycznych',
                 time: '12:00 - 14:00',
                 icon: <BsFillCartFill/>,
+                description: <text>Na warsztatach przedstawimy architekturę aplikacji backendowej jak i niezbędną teorię dotyczącą testów automatycznych. Zajęcia zwieńczymy cwiczeniami praktycznymi i napiszecie kilka testów pod naszym okiem.<br/>Warsztaty będą prowadzone w języku Kotlin. Jeśli znacie Javę również sobie poradzicie.</text>,
+                auth_desc: `Formularz do zapisów pojawi się wkrótce. Obserwuj nasz profil na Facebooku aby być na bieżąco!`
+
             }
         ],
         S204: [
@@ -245,7 +248,7 @@ const AgendaSection = (props) => {
                 }
                 </Col>
                 <Col xs={12} sm={4}>
-                <h2 className='text-center mb-lg-5'>Sala 205</h2>
+                <h2 className='text-center mb-lg-5'>Sala 30A</h2>
                 {
                     courses.A.map((event) => (
                         <Row className="my-3 mb-5 mb-lg-3" data-aos="fade-up" onClick={() => props.handleModal(event)}>
@@ -256,7 +259,7 @@ const AgendaSection = (props) => {
                                 <div>
                                     <h5 className="mb-0">{event.name}</h5>
                                     <p class="mb-0">{event.time}</p>
-                                    <p class="text-secondary d-none d-lg-block">Kliknij aby dowiedzieć się szczegółów!</p>
+                                    <p class="text-secondary d-none d-lg-block">Kliknij aby poznać szczegóły!</p>
                                 </div>
                             </Col>
                         </Row>
@@ -264,10 +267,10 @@ const AgendaSection = (props) => {
                 }
                 </Col>
                 <Col xs={12} sm={4}>
-                <h2 className='text-center mb-lg-5'>Sala 206</h2>
+                <h2 className='text-center mb-lg-5'>Sala 30B</h2>
                 {
                     courses.B.map((event) => (
-                        <Row className="my-3 mb-5 mb-lg-3" data-aos="fade-up">
+                        <Row className="my-3 mb-5 mb-lg-3" data-aos="fade-up" onClick={() => props.handleModal(event)}>
                             <Col xs={5} lg={3} className="text-end">
                                 <h5 className="display-6">{event.icon}</h5>
                             </Col>
@@ -275,7 +278,7 @@ const AgendaSection = (props) => {
                                 <div>
                                     <h5 className="mb-0">{event.name}</h5>
                                     <p class="mb-0">{event.time}</p>
-                                    <p class="text-secondary d-none d-lg-block">Temat warsztatów pojawi się w krótce. Obserwujcie nasz profil na Facebooku po najświesze aktualizacje!</p>
+                                    <p class="text-secondary d-none d-lg-block">Kliknij aby poznać szczegóły!</p>
                                 </div>
                             </Col>
                         </Row>
