@@ -15,41 +15,46 @@ const AgendaSection = (props) => {
                 time: '10:00 - 11:00',
                 icon: <BsFillCartFill/>,
                 author: '',
-                description: `Opis wydarzenia pojawi się wkrótce. <br />
-                    Obserwuj nasz profil na Facebooku by być na bieżąco!`,
+                description: `Opis wydarzenia pojawi się wkrótce.`,
+                auth_desc: `Obserwuj nasz profil na Facebooku by być na bieżąco!`,
             },
             {
-                name: 'Deployed',
+                name: 'Deployed - Storybook a tworzenie komponentów w React',
                 time: '11:00 - 12:00',
                 icon: <MdAspectRatio/>,
-                author: '',
-                description: `Opis wydarzenia pojawi się wkrótce. <br />
-                    Obserwuj nasz profil na Facebooku by być na bieżąco!`,
+                author: 'Maria Skrzypek-Markiewicz & Karol Kosek',
+                description: `Wystąpienie będzie miało za zadanie przybliżenie funkcjonalności narzędzia do budowania komponentów UI w izolacji - Storybook. 
+                Przedstawione zostaną zarówno podstawy tej technologi (tworzenie prostych historyjek, dodawanie pluginów, pisanie dokumentacji projektowej w storybook'u) jak i elementy bardziej zaawansowane - platforma do testów wizualnych, czy mockowanie żądań HTTP w historyjkach. 
+                Całość zostanie omówiona na przykładowym projekcie w ReactJS.
+                `,
+                auth_desc: `Wykład poprowadzą Maria Skrzypek-Markiewicz i Karol Kosek - frontend developerzy w Deployed.`,
+
             },
             {
-                name: 'Grafana - Observability 101',
+                name: 'Grafana Labs - Observability 101',
                 time: '12:00 - 13:00',
                 icon: <SiGrafana/>,
-                author: '',
-                description: `Opis wydarzenia pojawi się wkrótce. <br />
-                    Obserwuj nasz profil na Facebooku by być na bieżąco!`,
+                author: 'Łukasz Gut',
+                description: `Zrozumienie zachowania systemów komputerowych potrafi być sporym wyzwaniem, szczególnie przy dużej skali. Wraz z pojawieniem się rozwiązań chmurowych oraz popularyzacją systemów rozproszonych, obserwowanie infrastruktury oraz aplikacji staje się coraz trudniejsze. W ramach tej prezentacji, Łukasz Gut opowie o fundamentalnych zagadnieniach związanych monitorowaniem aplikacji oraz infrastruktury, pokaże jak wykorzystać tę wiedzę w praktyce, a na końcu spojrzy w przyszłośc i odpowie na pytanie: Co dalej?`,
+                auth_desc: `Wykład poprowadzi Łukasz Gut - absolwent WFiIS AGH, aktualnie senior developer w Grafana Labs.`,
             },
             {
                 name: 'WP Engine: Czym jest DevOps - DevOps a Agile',
                 time: '13:00 - 14:00',
                 icon: <IoLaptopOutline/>,
-                author: '',
+                author: 'Dawid Chara',
                 description: `"Automatyzacja wszystkiego" - to najważniejsza zasada w praktykach DevOps. 
                 Pogadamy o implementacji automatyzacji w praktyce, o tym czym jest CB, Jenkins, Terraform, Ansible. 
                 Opowiemy o tym, jakich języków programowania używamy na co dzień i innych ciekawych rzeczach.`,
+                auth_desc: `Wykład poprowadzi Dawid Chara - absolwent WFiIS AGH, aktualnie DevOps w WP Engine.`,
             },
             {
-                name: 'Expo',
+                name: 'Expo - Jak napisać aplikację mobilną w jeden dzień?',
                 time: '14:00 - 15:00',
                 icon: <SiExpo/>,
                 author: '',
-                description: `Opis wydarzenia pojawi się wkrótce. <br />
-                    Obserwuj nasz profil na Facebooku by być na bieżąco!`,
+                description: `Prezentacja ta będzie szybkim i prostym wprowadzeniem do świata React’a Native oraz Expo. Po jej wysłuchaniu dowiecie się jak z webowej biblioteki do tworzenia interfejsów użytkownika stworzono narzędzie pozwalające na szybsze niż kiedykolwiek tworzenie natywnych aplikacji mobilnych.`,
+                auth_desc: ``,
             },
             {
                 name: 'Niebezpiecznik - Wszystko da się zhackować.',
@@ -57,63 +62,78 @@ const AgendaSection = (props) => {
                 icon: <BsBug/>,
                 author: 'Piotr Konieczny',
                 description: `Ten wykład jest tak tajny, że jego opis nie może zostać publicznie ujawniony. 
-                Z kolei to zdanie dodałem, bo organizatorzy wymagali co najmniej 2 zdań opisu.`,
+                Z kolei to zdanie dodałem, bo organizatorzy wymagali co najmniej 2 zdań opisu.
+                 
+                 
+                `,
+                auth_desc: `Wykład poprowadzi Piotr Konieczny - absolwent WFiIS AGH, założyciel firmy Niebezpiecznik.`,
             }
         ],
         B: [
             {
-                name: 'ABB - VR w przemyśle',
+                name: 'ABB - Czy rozszerzona rzeczywistość jest rzeczywista w przemyśle?',
                 time: '10:00 - 11:00',
                 icon: <GiRobotGrab/>,
-                author: '',
-                description: `Opis wydarzenia pojawi się wkrótce. <br />
-                    Obserwuj nasz profil na Facebooku by być na bieżąco!`,
-            },
-            {
-                name: 'Cyfronet',
-                time: '11:00 - 12:00',
-                icon: <BsCalculatorFill/>,
-                author: '',
-                description: `Opis wydarzenia pojawi się wkrótce. <br />
-                    Obserwuj nasz profil na Facebooku by być na bieżąco!`,
-            },
-            {
-                name: 'Przerwa',
-                time: '12:00 - 13:00',
-                icon: <BsPauseBtnFill/>,
-                author: '',
-                description: `Czas na małą przerwę`,
+                author: 'Dawid Dułak',
+                description: `Wystąpienie przybliży sposób tworzenia projektów rozszerzonej rzeczywistości w praktyce.
+                Widzowie będą mogli zobaczyć przykłady aplikacji rozszerzonej rzeczywistości, które są obecnie używane w przemyśle i nie tylko.
+                Oprócz tego na żywo zostaną zaprezentowane urządzenia i rozwiązania na nich dostępne.
+                Na koniec prowadzący odpowie na pytania publiczności, a podczas całego wydarzenia będzie można osobiście przetestować dostępne urządzenia.          
+                `,
+                auth_desc: `Wykład poprowadzi Dawid Dułak - IS Technology Leader (Extended Reality) w ABB`,
             },
             {
                 name: 'KN BIT - Czy AI ukradnie nam pracę?',
                 time: '13:00 - 14:00',
                 icon: <IoLaptopOutline/>,
                 author: 'Szymon Rusiecki',
-                description: `Czyli kilka słów o tym czy i czego powinniśmy(?) się obawiać w nadchodzących latach, a także przedstawienie aktualnej konkurencji(?) na rynku pracy.`,
-            }
+                description: `Czyli kilka słów o tym czy i czego powinniśmy(?) się obawiać w nadchodzących latach, a także przedstawienie aktualnej konkurencji(?) na rynku pracy.
+                `,
+                auth_desc: `Wykład poprowadzi Szymon Rusiecki - prezes Koła Naukowego BIT`,
+            },
+
+            {
+                name: 'Przerwa',
+                time: '12:00 - 13:00',
+                icon: <BsPauseBtnFill/>,
+                author: '',
+                description: `Czas na małą przerwę`,
+                auth_desc: ``,
+            },
+            {
+                name: 'Cyfronet',
+                time: '11:00 - 12:00',
+                icon: <BsCalculatorFill/>,
+                author: '',
+                description: `Opis wydarzenia pojawi się wkrótce. `,
+                auth_desc: `Obserwuj nasz profil na Facebooku by być na bieżąco!`,
+            },
+
         ]
     }
 
     const courses = {
         A: [
             {
-                name: 'Deployed',
-                time: '12:00 - 14:00',
-                icon: <MdAspectRatio/>
+                name: 'Deployed - Django/Python: System obsługi listów do św. Mikołaja',
+                time: '11:00 - 14:00',
+                icon: <MdAspectRatio/>,
+                description: 'Na warsztatach wprowadzimy Cię w świat backendu, a dokładniej jednego z najpopularniejszych frameworków - Django. Dużym atutem Django są jego użytkownicy i społeczność, która współpracuje ze sobą w ramach kultury open source. Wykorzystując gotowe rozwiązania, które oferuje Django, stworzymy prostą aplikację internetową, w której będzie można wysłać list do św. Mikołaja, a następnie przeprocesować go, aż do momentu spakowania prezentów do sań :)',
+                auth_desc: `Formularz do zapisów pojawi się wkrótce. Obserwuj nasz profil na Facebooku aby być na bieżąco!`,
             }
         ],
         B: [
             {
                 name: 'Allegro',
                 time: '12:00 - 14:00',
-                icon: <BsFillCartFill/>
+                icon: <BsFillCartFill/>,
             }
         ],
         S204: [
             {
                 name: 'Sala VR/AR',
                 time: '10:00 - 16:00',
-                icon: <SiOculus/>
+                icon: <SiOculus/>,
             }
         ]
     }
@@ -205,25 +225,6 @@ const AgendaSection = (props) => {
             </Row>
             <Row className="mt-5">
                 <Col xs={12} sm={4}>
-                <h2 className='text-center mb-lg-5'>Sala A</h2>
-                {
-                    courses.A.map((event) => (
-                        <Row className="my-3 mb-5 mb-lg-3" data-aos="fade-up">
-                            <Col xs={5} lg={3} className="text-end">
-                                <h5 className="display-6">{event.icon}</h5>
-                            </Col>
-                            <Col xs={7} lg={9} className="d-flex align-items-center">
-                                <div className='w-100'>
-                                    <h5 className="mb-0">{event.name}</h5>
-                                    <p class="mb-0">{event.time}</p>
-                                    <p class="text-secondary d-none d-lg-block">Temat warsztatów pojawi się w krótce. Obserwujcie nasz profil na Facebooku po najświesze aktualizacje!</p>
-                                </div>
-                            </Col>
-                        </Row>
-                    ))
-                }
-                </Col>
-                <Col xs={12} sm={4}>
                 <h2 className='text-center mb-lg-5'>Sala 204</h2>
                 {
                     courses.S204.map((event) => (
@@ -232,7 +233,7 @@ const AgendaSection = (props) => {
                                 <h5 className="display-6">{event.icon}</h5>
                             </Col>
                             <Col xs={7} lg={9} className="d-flex align-items-center">
-                                <div>
+                                <div className='w-100'>
                                     <h5 className="mb-0">{event.name}</h5>
                                     <p class="mb-0">{event.time}</p>
                                     <p class="text-secondary d-none d-lg-block">Chciałbyś zobaczyć jak działają gogle wirtualnej rzeczywistości? 
@@ -244,7 +245,26 @@ const AgendaSection = (props) => {
                 }
                 </Col>
                 <Col xs={12} sm={4}>
-                <h2 className='text-center mb-lg-5'>Sala B</h2>
+                <h2 className='text-center mb-lg-5'>Sala 205</h2>
+                {
+                    courses.A.map((event) => (
+                        <Row className="my-3 mb-5 mb-lg-3" data-aos="fade-up" onClick={() => props.handleModal(event)}>
+                            <Col xs={5} lg={3} className="text-end">
+                                <h5 className="display-6">{event.icon}</h5>
+                            </Col>
+                            <Col xs={7} lg={9} className="d-flex align-items-center">
+                                <div>
+                                    <h5 className="mb-0">{event.name}</h5>
+                                    <p class="mb-0">{event.time}</p>
+                                    <p class="text-secondary d-none d-lg-block">Kliknij aby dowiedzieć się szczegółów!</p>
+                                </div>
+                            </Col>
+                        </Row>
+                    ))
+                }
+                </Col>
+                <Col xs={12} sm={4}>
+                <h2 className='text-center mb-lg-5'>Sala 206</h2>
                 {
                     courses.B.map((event) => (
                         <Row className="my-3 mb-5 mb-lg-3" data-aos="fade-up">

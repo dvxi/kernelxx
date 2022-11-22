@@ -12,8 +12,12 @@ const InfoModal = (props) => {
             >
             <Modal.Body className="p-4 rounded" style={{ backgroundColor: '#313131' }}>
                 <h4>Dowiedz się więcej</h4>
-                <p className="mb-4">
+                <p className="mb-4" style={{textAlign: "justify"}}>
+                    <br/>
                     {props.info.description}
+                    <br/>
+                    <br/>
+                    {props.info.auth_desc}
                 </p>
                 <div className="d-grip gap-2">
                     <Button variant="outline-primary" size="lg" href="https://www.facebook.com/KNIKernel">
