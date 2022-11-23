@@ -98,10 +98,6 @@ const InfoSection = () => {
                 </Col>
                 <Col xs={8} lg={3} className="px-3 d-flex justify-content-center my-2 jumpy" data-aos="zoom-in">
                     <Image style={{ borderRadius: 15 }}
-                        src="nokia.jpg" fluid/>
-                </Col>
-                <Col xs={8} lg={3} className="px-3 d-flex justify-content-center my-2 jumpy" data-aos="zoom-in">
-                    <Image style={{ borderRadius: 15 }}
                         src="deployed.png" fluid/>
                 </Col>
                 <Col xs={8} lg={3} className="px-3 d-flex justify-content-center my-2 jumpy" data-aos="zoom-in">
