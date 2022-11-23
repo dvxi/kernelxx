@@ -35,7 +35,7 @@ function WelcomeSection() {
             </Col>
             <Row className="text-center my-5 justify-content-center">
 
-              <h3 style={{ fontWeight: 700 }}>
+              <h3 style={{ fontWeight: 700, zIndex: 100 }}>
                 3 grudnia 2022r
               </h3>
               <h4 style={{ fontWeight: 600 }}>
