@@ -15,8 +15,8 @@ const AgendaSection = (props) => {
                 time: '10:00 - 11:00',
                 icon: <BsFillCartFill/>,
                 author: 'Arkadiusz Sokołowski',
-                description: `Nieblokujące operacje wejścia-wyjścia (NIO) pojawiły się już w Javie 1.4 z 2002 roku. Od tego czasu nieco zdążyły wyewoluować, powstało programowanie reaktywne, do drzwi puka projekt Loom mający ułatwić programowanie współbieżne. Co da się wycisnąć z NIO, kanałów i buforów? Jak pisać aplikacje sieciowe, aby wykorzystać możliwości NIO, i jak w ogóle to robić w Javie? O tym wszystkim będzie ta opowieść.`,
-                auth_desc: `Wykład poprowadzi Arkadiusz Sokołowski - Software Engineering Leader, Team Manager w Allegro`,
+                description: `Nieblokujące operacje wejścia-wyjścia (NIO) pojawiły się już w Javie 1.4 (który to był rok…?). Od tego czasu nieco zdążyły wyewoluować, powstało programowanie reaktywne, do drzwi puka projekt Loom mający ułatwić programowanie współbieżne. Co da się wycisnąć z NIO, kanałów i buforów? Jak pisać aplikacje sieciowe, aby wykorzystać możliwości NIO, i jak w ogóle to robić w Javie? O tym wszystkim będzie ta opowieść. 🙂`,
+                auth_desc: `Wykład poprowadzi Arkadiusz Sokołowski - Team Manager w Allegro`,
             },
             {
                 name: 'Deployed - Storybook a tworzenie komponentów w React',
