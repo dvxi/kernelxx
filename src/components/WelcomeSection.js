@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Image, Carousel } from 'react-bootstrap';
+import {Container, Row, Col, Image, Carousel, Card} from 'react-bootstrap';
 
 const partners = [
   'abb.png',
@@ -31,11 +31,26 @@ function WelcomeSection() {
               <p className="lead">
                 To oficjalna, otwarta Konferencja IT, zorganizowana w ramach obchodów Jubileuszu XX-lecia działalności Koła Naukowego Informatyków Kernel
               </p>
+
             </Col>
+            <Row className="text-center my-5 justify-content-center">
+
+              <h3 style={{ fontWeight: 700 }}>
+                3 grudnia 2022r
+              </h3>
+              <h4 style={{ fontWeight: 600 }}>
+                10:00- 16:00
+              </h4>
+              <br/>
+              <p className="lead mb-0">
+                Budynek D-10 AGH <br/>
+                  ul. Reymonta 19, Kraków
+              </p>
+            </Row>
             <Col xs={12} lg={6}></Col>
-            {/* <Col>
+            {/*<Col>
               <Row className="justify-content-center">
-              {
+
                 partners.map((partner) => (
                     <Col xs={4} lg={1} className="d-flex align-items-center bg-white rounded m-2 px-3 py-3">
                         <Image
@@ -46,6 +61,7 @@ function WelcomeSection() {
               </Row>
             </Col> */}
           </Row>
+
         </Container>
         </div>
     );
