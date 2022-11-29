@@ -8,7 +8,7 @@ const InfoSection = () => {
     const cards = [
         {
             icon: <IoSchoolOutline className="me-3" />,
-            title: '9',
+            title: '10',
             text: 'Prelekcji'
         },
         {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { IoLaptopOutline, IoGlobeOutline } from 'react-icons/io5';
-import { SiExpo, SiOculus, SiGrafana } from 'react-icons/si';
+import { SiExpo, SiOculus, SiGrafana, SiApachekafka } from 'react-icons/si';
 import { GiRobotGrab } from 'react-icons/gi';
 import { BsFillCartFill, BsBug, BsPauseBtnFill, BsCalculatorFill } from 'react-icons/bs';
 import { MdAspectRatio } from 'react-icons/md';
@@ -91,14 +91,21 @@ const AgendaSection = (props) => {
                 `,
                 auth_desc: `Wykład poprowadzi Szymon Rusiecki - prezes Koła Naukowego BIT`,
             },
-
             {
                 name: 'Przerwa',
-                time: '12:00 - 14:00',
+                time: '12:00 - 13:00',
                 icon: <BsPauseBtnFill/>,
                 author: '',
                 description: `Czas na małą przerwę`,
                 auth_desc: ``,
+            },
+            {
+                name: 'Wprowadzenie do Apache Kafka',
+                time: '13:00 - 14:00',
+                icon: <SiApachekafka/>,
+                author: 'Łukasz Chrząszcz',
+                description: `Kafka na dobre zadomowiła się wśród inżynierów jako solidne i szybkie narzędzie do asynchronicznej komunikacji, ale jak ona działa? Jak wygląda? Co to jest producer, co to jest consumer? Na tej prelekcji poznasz podstawy Kafki i zrozumiesz do czego ona służy i jak działa.`,
+                auth_desc: <text>Wykład poprowadzi Łukasz Chrząszcz - Senior Software Developer, autor bloga <a href="https://chrzaszcz.dev">chrzaszcz.dev</a> na którego serdecznie zapraszamy!</text>,
             },
             {
                 name: 'Cyfronet - Superkomputery - krzemowy wyścig zbrojeń',
