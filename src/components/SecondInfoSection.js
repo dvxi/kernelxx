@@ -9,9 +9,9 @@ const partners = [
     'allegro.png',
     'cyfronet.png',
     'deployed.png',
-    'expo.png',
     'grafana.png',
     'niebezpiecznik.png',
+    'swm.png',
     'wpengine.png'
     ]
     

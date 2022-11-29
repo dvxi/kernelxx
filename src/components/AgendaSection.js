@@ -49,10 +49,10 @@ const AgendaSection = (props) => {
                 auth_desc: `Wykład poprowadzi Dawid Chara - absolwent WFiIS AGH, aktualnie DevOps w WP Engine.`,
             },
             {
-                name: 'Expo - Jak napisać aplikację mobilną w jeden dzień?',
+                name: 'Software Mansion - Jak napisać aplikację mobilną w jeden dzień?',
                 time: '14:00 - 15:00',
                 icon: <SiExpo/>,
-                author: '',
+                author: 'Łukasz Kosmaty',
                 description: `Prezentacja ta będzie szybkim i prostym wprowadzeniem do świata React’a Native oraz Expo. Po jej wysłuchaniu dowiecie się jak z webowej biblioteki do tworzenia interfejsów użytkownika stworzono narzędzie pozwalające na szybsze niż kiedykolwiek tworzenie natywnych aplikacji mobilnych.`,
                 auth_desc: ``,
             },
@@ -126,7 +126,7 @@ const AgendaSection = (props) => {
                 time: '11:00 - 14:00',
                 icon: <MdAspectRatio/>,
                 description: 'Na warsztatach wprowadzimy Cię w świat backendu, a dokładniej jednego z najpopularniejszych frameworków - Django. Dużym atutem Django są jego użytkownicy i społeczność, która współpracuje ze sobą w ramach kultury open source. Wykorzystując gotowe rozwiązania, które oferuje Django, stworzymy prostą aplikację internetową, w której będzie można wysłać list do św. Mikołaja, a następnie przeprocesować go, aż do momentu spakowania prezentów do sań :)',
-                auth_desc: `Formularz do zapisów pojawi się wkrótce. Obserwuj nasz profil na Facebooku aby być na bieżąco!`,
+                auth_desc: <text>Formularz do zapisów dostępny jest pod <a href="https://docs.google.com/forms/d/e/1FAIpQLSe4Wc5e7I9XP6kPpY5RWmT9J1HEjPeiXP9dvSO7hX_zjXuFFw/viewform?fbclid=IwAR08DwDUgitUI4N6E2utuU7vtmxqAp2X8TRU3n62nQdYdW3MyP4yA4sEvQ0">tym</a> linkiem. Macie czas do piątku do godziny 12:00. Nie liczy się czas zgłoszenia, a to jak wypełnicie formularz</text>,
             }
         ],
         B: [
@@ -135,7 +135,7 @@ const AgendaSection = (props) => {
                 time: '12:00 - 14:00',
                 icon: <BsFillCartFill/>,
                 description: 'Na warsztatach przedstawimy architekturę aplikacji backendowej jak i niezbędną teorię dotyczącą testów automatycznych. Zajęcia zwieńczymy cwiczeniami praktycznymi i napiszecie kilka testów pod naszym okiem.<br/>Warsztaty będą prowadzone w języku Kotlin. Jeśli znacie Javę również sobie poradzicie.',
-                auth_desc: `Formularz do zapisów pojawi się wkrótce. Obserwuj nasz profil na Facebooku aby być na bieżąco!`
+                auth_desc: <text>Formularz do zapisów dostępny jest pod <a href="https://docs.google.com/forms/d/e/1FAIpQLScoxAfkeV4XmLxmITrvrhOSV28zewSFNg5uNk8Nzos-yki_Yg/viewform">tym</a> linkiem. Macie czas do piątku do godziny 12:00. Nie liczy się czas zgłoszenia, a to jak wypełnicie formularz</text>,
 
             }
         ],

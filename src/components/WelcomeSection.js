@@ -62,7 +62,7 @@ function WelcomeSection() {
               3 grudnia 2022r
             </h3>
             <h4 style={{ fontWeight: 600 }}>
-              10:00- 16:00
+              10:00 - 16:00
             </h4>
             <p className="lead mb-0">
               Budynek D-10 AGH <br/>
