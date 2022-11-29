@@ -56,15 +56,28 @@ const InfoSection = () => {
             {
                 cards.map((card) => (
                     <Col xs={6} lg={3} className="my-3" data-aos="fade-up">
-                        <Card bg="dark" className="p-3" style={{ 'border-radius': '20px' }}>
+                        <Card bg="white" className="p-3" style={{ borderRadius: '20px', color: 'black' }}>
                             <Card.Body>
-                                <Card.Title className="display-6">
+                                <Row>
+                                    <Col xs={6}>
+                                        <h2>{card.icon}</h2>
+                                    </Col>
+                                    <Col xs={6} className="text-end">
+                                        <h2>
+                                            {card.title}
+                                        </h2>
+                                    </Col>
+                                    <Col xs={12} className="text-end">
+                                        {card.text}
+                                    </Col>
+                                </Row>
+                                {/* <Card.Title className="display-4">
                                     {card.icon}
                                     {card.title}
                                 </Card.Title>
                                 <Card.Text>
                                     {card.text}
-                                </Card.Text>
+                                </Card.Text> */}
                             </Card.Body>
                         </Card>
                     </Col>

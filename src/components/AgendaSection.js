@@ -134,7 +134,7 @@ const AgendaSection = (props) => {
                 name: 'Allegro - Podstawy testów automatycznych',
                 time: '12:00 - 14:00',
                 icon: <BsFillCartFill/>,
-                description: <text>Na warsztatach przedstawimy architekturę aplikacji backendowej jak i niezbędną teorię dotyczącą testów automatycznych. Zajęcia zwieńczymy cwiczeniami praktycznymi i napiszecie kilka testów pod naszym okiem.<br/>Warsztaty będą prowadzone w języku Kotlin. Jeśli znacie Javę również sobie poradzicie.</text>,
+                description: 'Na warsztatach przedstawimy architekturę aplikacji backendowej jak i niezbędną teorię dotyczącą testów automatycznych. Zajęcia zwieńczymy cwiczeniami praktycznymi i napiszecie kilka testów pod naszym okiem.<br/>Warsztaty będą prowadzone w języku Kotlin. Jeśli znacie Javę również sobie poradzicie.',
                 auth_desc: `Formularz do zapisów pojawi się wkrótce. Obserwuj nasz profil na Facebooku aby być na bieżąco!`
 
             }
@@ -173,35 +173,35 @@ const AgendaSection = (props) => {
                 </Col>
             </Row>
             <Row className="mt-5">
-                <Col>
+                <Col xs={12} md={6}>
                 <h2 className='text-center mb-5'>Sala A</h2>
                 {
                     events.A.map((event) => (
                         <Row className="my-3" data-aos="fade-up" onClick={() => props.handleModal(event)}>
-                            <Col xs={8} lg={9} className="d-flex align-items-center">
-                                <div className='w-100 text-end'>
+                            <Col xs={12} lg={9} className="d-flex align-items-center order-2 order-lg-1">
+                                <div className='w-100 text-center text-lg-end'>
                                     <h5 className="mb-0">{event.name}</h5>
                                     <p class="mb-0">{event.time}</p>
                                     <p class="text-secondary d-none d-lg-block">{event.author}</p>
                                 </div>
                             </Col>
-                            <Col xs={4} lg={3}>
-                                <h3 className="display-6">{event.icon}</h3>
+                            <Col xs={12} lg={3} className="order-1 order-lg-2">
+                                <h3 className="display-6 text-center text-lg-start">{event.icon}</h3>
                             </Col>
                         </Row>
                     ))
                 }
                 </Col>
-                <Col>
+                <Col xs={12} md={6}>
                 <h2 className='text-center mb-5'>Sala B</h2>
                 {
                     events.B.map((event) => (
                         <Row className="my-3" data-aos="fade-up" onClick={() => props.handleModal(event)}>
-                            <Col xs={4} lg={3} className="text-end">
+                            <Col xs={12} lg={3} className="text-center text-lg-end">
                                 <h3 className="display-6">{event.icon}</h3>
                             </Col>
-                            <Col xs={8} lg={9} className="d-flex align-items-center">
-                                <div>
+                            <Col xs={12} lg={9} className="d-flex align-items-center">
+                                <div className="w-100 text-center text-lg-start">
                                     <h5 className="mb-0">{event.name}</h5>
                                     <p class="mb-0">{event.time}</p>
                                     <p class="text-secondary d-none d-lg-block">{event.author}</p>
@@ -234,15 +234,15 @@ const AgendaSection = (props) => {
                 </Col>
             </Row>
             <Row className="mt-5">
-                <Col xs={12} sm={4}>
+                <Col xs={12} md={4}>
                 <h2 className='text-center mb-lg-5'>Sala 204</h2>
                 {
                     courses.S204.map((event) => (
                         <Row className="my-3 mb-5 mb-lg-3" data-aos="fade-up">
-                            <Col xs={5} lg={3} className="text-end">
+                            <Col xs={12} lg={3} className="text-center text-lg-end">
                                 <h5 className="display-6">{event.icon}</h5>
                             </Col>
-                            <Col xs={7} lg={9} className="d-flex align-items-center">
+                            <Col xs={12} lg={9} className="d-flex align-items-center text-center text-lg-start">
                                 <div className='w-100'>
                                     <h5 className="mb-0">{event.name}</h5>
                                     <p class="mb-0">{event.time}</p>
@@ -254,15 +254,15 @@ const AgendaSection = (props) => {
                     ))
                 }
                 </Col>
-                <Col xs={12} sm={4}>
+                <Col xs={12} md={4}>
                 <h2 className='text-center mb-lg-5'>Sala 30A</h2>
                 {
                     courses.A.map((event) => (
                         <Row className="my-3 mb-5 mb-lg-3" data-aos="fade-up" onClick={() => props.handleModal(event)}>
-                            <Col xs={5} lg={3} className="text-end">
+                            <Col xs={12} lg={3} className="text-center text-lg-end">
                                 <h5 className="display-6">{event.icon}</h5>
                             </Col>
-                            <Col xs={7} lg={9} className="d-flex align-items-center">
+                            <Col xs={12} lg={9} className="d-flex align-items-center text-center text-lg-start">
                                 <div>
                                     <h5 className="mb-0">{event.name}</h5>
                                     <p class="mb-0">{event.time}</p>
@@ -273,16 +273,16 @@ const AgendaSection = (props) => {
                     ))
                 }
                 </Col>
-                <Col xs={12} sm={4}>
+                <Col xs={12} md={4}>
                 <h2 className='text-center mb-lg-5'>Sala 30B</h2>
                 {
                     courses.B.map((event) => (
                         <Row className="my-3 mb-5 mb-lg-3" data-aos="fade-up" onClick={() => props.handleModal(event)}>
-                            <Col xs={5} lg={3} className="text-end">
+                            <Col xs={12} lg={3} className="text-center text-lg-end">
                                 <h5 className="display-6">{event.icon}</h5>
                             </Col>
-                            <Col xs={7} lg={9} className="d-flex align-items-center">
-                                <div>
+                            <Col xs={12} lg={9} className="d-flex align-items-center text-center text-lg-start">
+                                <div style={{ width: '100%' }}>
                                     <h5 className="mb-0">{event.name}</h5>
                                     <p class="mb-0">{event.time}</p>
                                     <p class="text-secondary d-none d-lg-block">Kliknij aby poznać szczegóły!</p>
