@@ -37,7 +37,7 @@ const JobModal = (props) => {
 
                 </p>
                 <div className="d-grip gap-2">
-                    <Button variant="outline-primary" size="lg" href={props.info.link} target="_blank">
+                    <Button className="px-5 mt-3 text-white fw-bold btn-primary btn-block" href={props.info.link} target="_blank">
                         Apply!
                     </Button>
                 </div>

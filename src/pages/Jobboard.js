@@ -194,7 +194,7 @@ export default function Jobboard() {
                                         <Badge bg="dark" className="m-1 p-2 border border-primary" style={{ borderWidth: 1, borderColor: "#FF0066" }}>{skill}</Badge>
                                     ))
                                 }
-                                    <Button className="px-5 mt-3 text-white fw-bold btn-primary btn-block" style={{ borderColor: "#FF0066", width: '100%' }} onClick={() => handleJobModal(offer)}>Więcej</Button>
+                                    <Button className="px-5 mt-3 text-white fw-bold btn-primary btn-block" style={{ width: '100%' }} onClick={() => handleJobModal(offer)}>Więcej</Button>
                             </Card.Body>
                         </Card>
                     ))
