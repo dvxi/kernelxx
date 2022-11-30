@@ -1,55 +1,21 @@
-import { React, useState } from 'react';
-import { Col, Row, Image, Card } from 'react-bootstrap';
+import { React } from 'react';
 
 import NavbarComponent from './components/NavbarComponent';
-import WelcomeSection from './components/WelcomeSection';
-import InfoSection from './components/InfoSection';
-import AgendaSection from './components/AgendaSection';
-import InfoModal from './components/InfoModal';
-import SecondInfoSection from './components/SecondInfoSection';
+import Main from './pages/Main';
+import Jobboard from './pages/Jobboard';
+
+import { BrowserRouter as Router, Routes, Route}
+    from 'react-router-dom';
 
 function App() {
-
-  const [modalShow, setModalShow] = useState(false);
-  const [modalInfo, setModalInfo] = useState({});
-
-  const handleModal = (modalInfo) => {
-    setModalInfo(modalInfo);
-    console.log(modalInfo);
-    setModalShow(true);
-  }
-
   return (
-    <div>
+    <Router>
       <NavbarComponent />
-      <WelcomeSection />
-      <InfoSection />
-      <AgendaSection handleModal={handleModal}/>
-      <InfoModal
-        show={modalShow}
-        onHide={() => setModalShow(false)}
-        info={modalInfo}
-      />
-      {/* <img 
-      src="./kernel.svg"
-      style={{
-        position: 'absolute',
-        top: 0,
-        right: '-10%',
-        zIndex: -1
-      }}
-      className="opacity-25"/> */}
-      <SecondInfoSection />
-      <div style={{
-        position: 'absolute',
-        top: 0,
-        right: 0,
-        borderRadius: '50%',
-        background: "radial-gradient('#e66465', '#9198e5')",
-        width: '80vw',
-        height: '80vw'
-      }}></div>
-    </div>
+      <Routes>
+        <Route exact path="/" element={<Main />} />
+        <Route path="/jobboard" element={<Jobboard /> } />
+      </Routes>
+    </Router>
   );
 }
 

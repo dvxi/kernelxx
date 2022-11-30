@@ -5,6 +5,9 @@ $body-bg: #000;
 $body-color: #fff;
 $font-family-base: 'Poppins', 'sans-serif';
 
+$theme-colors: (
+    "primary": #FF0066
+);
 // Import Bootstrap and its default variables
 @import '~bootstrap/scss/bootstrap.scss';
 

@@ -2,6 +2,20 @@
   text-align: center;
 }
 
+.jobboardHeader{
+  position: 'fixed';
+  top: '30%';
+  width: '40vw';
+}
+
+@media (min-width: 992px) {
+  .jobboardHeader{
+    position: 'fixed';
+    top: '30%';
+    width: '40vw';
+  }
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
